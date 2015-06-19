@@ -3,9 +3,7 @@
 Contributors: Mobile-Rockstar.com, Dave, Buildappsbiz
 Tags: wordapp, iphone, app, ipod, theme, apple, mac, wordpress, mobile, android, smartphone
 Requires at least: 2.7.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
+License: GPLv2 
 
 WordApp Convert Wordpress to Mobile app & mobile website
 == Description ==
