@@ -9,7 +9,7 @@
   License: GPLv3
   Copyright: Mobile Rockstar
 */
-define('APPNAME', 'WordApp');
+define('APPNAME', 'WordApp-master');
 define('PLUGIN_URL', 'http://mobile-rockstar.com/app/main/app.php');
 class WordAppClass
 {
