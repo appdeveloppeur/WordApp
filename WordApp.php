@@ -206,10 +206,10 @@ return $newinput;
 
 
 	function register_WordApp_menu(){
-		$page_title = APPNAME;
-		$menu_title = APPNAME;
+		$page_title = "WordApp";
+		$menu_title = "WordApp";
 		$capability = 1;
-		$menu_slug  = APPNAME;
+		$menu_slug  = "WordApp";
 		$function  	= "WordAppHomepage";
 		
 	

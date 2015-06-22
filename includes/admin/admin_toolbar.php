@@ -149,12 +149,12 @@ $activate = json_decode(file_get_contents("http://mobile-rockstar.com/app/activa
    
 <h2 class="nav-tab-wrapper">
     
-    <a href="?page=<?php echo APPNAME; ?>Builder&tab=" class="nav-tab <?php echo $active_tab == '' ? 'nav-tab-active' : ''; ?>"><?php echo __('Design'); ?></a>
-    <a href="?page=<?php echo APPNAME; ?>Builder&tab=step2" class="nav-tab <?php echo $active_tab == 'step2' ? 'nav-tab-active' : ''; ?>"><?php echo __('Menus'); ?></a>
-	<a href="?page=<?php echo APPNAME; ?>Builder&tab=slideshow" class="nav-tab <?php echo $active_tab == 'slideshow' ? 'nav-tab-active' : ''; ?>"><?php echo __('Slideshow'); ?></a>
-    <a href="?page=<?php echo APPNAME; ?>Builder&tab=step3" class="nav-tab <?php echo $active_tab == 'step3' ? 'nav-tab-active' : ''; ?>"><?php echo __('App Structure'); ?></a>
-    <a href="?page=<?php echo APPNAME; ?>Builder&tab=step4" style="background-color: #00a0d2;color: #fff;margin-left: 10%;" class="nav-tab <?php echo $active_tab == 'step4' ? 'nav-tab-active' : ''; ?>"><?php echo __('Publish App'); ?></a>
-     <a href="?page=<?php echo APPNAME; ?>Builder&tab=step4" style="" id="previewApp" class="nav-tab <?php echo $active_tab == 'step4' ? 'nav-tab-active' : ''; ?>"><img src="<?php echo plugins_url( APPNAME.'/images/app20x20.png' )?>"></a>
+    <a href="?page=WordAppBuilder&tab=" class="nav-tab <?php echo $active_tab == '' ? 'nav-tab-active' : ''; ?>"><?php echo __('Design'); ?></a>
+    <a href="?page=WordAppBuilder&tab=step2" class="nav-tab <?php echo $active_tab == 'step2' ? 'nav-tab-active' : ''; ?>"><?php echo __('Menus'); ?></a>
+	<a href="?page=WordAppBuilder&tab=slideshow" class="nav-tab <?php echo $active_tab == 'slideshow' ? 'nav-tab-active' : ''; ?>"><?php echo __('Slideshow'); ?></a>
+    <a href="?page=WordAppBuilder&tab=step3" class="nav-tab <?php echo $active_tab == 'step3' ? 'nav-tab-active' : ''; ?>"><?php echo __('App Structure'); ?></a>
+    <a href="?page=WordAppBuilder&tab=step4" style="background-color: #00a0d2;color: #fff;margin-left: 10%;" class="nav-tab <?php echo $active_tab == 'step4' ? 'nav-tab-active' : ''; ?>"><?php echo __('Publish App'); ?></a>
+     <a href="?page=WordAppBuilder&tab=step4" style="" id="previewApp" class="nav-tab <?php echo $active_tab == 'step4' ? 'nav-tab-active' : ''; ?>"><img src="<?php echo plugins_url( APPNAME.'/images/app20x20.png' )?>"></a>
    
 	
 </h2>
