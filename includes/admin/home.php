@@ -565,7 +565,7 @@ else if($active_tab == "step4"){
 				</div>
 			<div style="" id="myPreview" style=";">
 				<center><h1 style="font-size: 10px;">Preview my app in mobile browser</h1>
-				<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fmobile-rockstar.com%2Fapp%2F<?php echo urlencode(str_replace('http://','',get_site_url())) ?>&choe=UTF-8" title="" />
+				<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2Fmobile-rockstar.com%2Fapp%2Fmain%2Fapp.php%3Furl%3D<?php echo base64_encode(get_bloginfo('url')) ?>&choe=UTF-8" title="" />
 				<br> Scan this QR code with your mobile phone to view your app in your mobile browser.
 				</center>
 			
