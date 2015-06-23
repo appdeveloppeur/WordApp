@@ -73,7 +73,7 @@ Once you publish your app, it will go through several stages.
 3. Creating a slideshow.
 
 == Changelog ==
-= Version 1.0 = 
+= Version 0.1 = 
 * Initial release
 == Upgrade notice ==
 
