@@ -361,7 +361,7 @@ else if($active_tab == "step4"){
 <h1><?php echo __('This is where it gets complicated!');?></h1>
 <h2><?php echo __('but that is why we are here, right?');?></h2>
 <h2><?php echo __('Watch this short video to see how it works.');?></h2>
-<iframe src="<?php echo $activate->pubVideo; ?>" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="400"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+<iframe src="<?php echo $activate->pubVideo; ?>" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="400"></iframe>
 							
 <h2><?php echo __('We will send your your app to apple & android for free!');?></h2>
 
@@ -560,9 +560,7 @@ else if($active_tab == "step4"){
 
 						<div class="inside">    
          	<div id="preview">
-					<div class="scroll-wrapper">         
-				 		<iframe src="<?php echo PLUGIN_URL ?>?url=<?php echo base64_encode(get_bloginfo('url')) ?>" name="iphoneFrame" id="currentElement"></iframe>
-					</div>
+					<img id="previewApp" data-webid="<?php echo base64_encode(get_bloginfo('url')) ?>" src="<?php echo plugins_url(APPNAME.'/images/phone_frame.png')?>" width="100%">
 				</div>
 			<div style="" id="myPreview" style=";">
 				<center><h1 style="font-size: 10px;">Preview my app in mobile browser</h1>

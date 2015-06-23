@@ -56,6 +56,14 @@ jQuery(document).ready(function($){
 	
 	
 	 $('#previewApp').click(function() {
+        tb_show('Preview you app in  web browser', 'http://mobile-rockstar.com/app/demo.php?url=' + $( "#previewApp" ).data( "webid" ) + '&TB_iframe=true', false);
+       i = "preview";
+		 // #TB_window width: 440px;
+		// $("#TB_window").width('440px');
+        return false;
+    });
+
+	 $('#previewApp2').click(function() {
         tb_show('Preview you app in mobile web browser', '#TB_inline?inlineId=myPreview&height=400&width=400&modal=false');
         i = "preview";
 		 // #TB_window width: 440px;

@@ -2,47 +2,6 @@
 if ( !current_user_can( 'manage_options' ) )  {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
-	
-echo '
-	<style>
-	#preview {
-	position: relative;
-  display: block;
- height: 601px;
-  width: 505px;
-  background: url('.plugins_url(APPNAME.'/images/phone_frame.jpg').') center no-repeat;
-  background-size: 60%;
-  padding: 0px;
-  margin: 0px;
-  left: -139px;
-}
-#preview iframe {
-  position: absolute;
-  background: white;
-  width: 238px;
-  height: 417px;
-  top: 85px;
-  left: 136px;
-  border-radius: 4px;
-  overflow: hidden;
-}	
-.wordAppheader {
-  padding: 30px 0 12px;
-  margin: 0 20px;
-  overflow: auto;
-  
-}
-.wordApplogo {
-  float: left;
-  width: 190px;
-  margin-top: 2px;
-}
-.wordAppsubscribe{
-  float: right;
-  margin: 10px 20px 0 0;
-}
-</style>		
-';	
 
 	 if( isset( $_GET[ 'tab' ] ) ) {
              $active_tab = $_GET[ 'tab' ];
@@ -69,7 +28,7 @@ echo '
 	   </form></div>
 	    <div style="float:left;text-align:center;margin-left: 140px;">
 		     <?php
-$activate = json_decode(file_get_contents("http://mobile-rockstar.com/app/activate.php?user=".get_bloginfo('admin_email')."&url=".urlencode(get_bloginfo('url'))."&longUrl=&format=json&noemail=yes"));	
+$activate = json_decode(file_get_contents("http://mobile-rockstar.com/app/activate.php?user=&url=".urlencode(get_bloginfo('url'))."&longUrl=&format=json&noemail=yes"));	
 		   ?>
 			
 			<?php if($activate->modalActive == "on"){ ?>

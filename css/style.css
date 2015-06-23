@@ -1,0 +1,55 @@
+
+.wordAppheader {
+  padding: 30px 0 12px;
+  margin: 0 20px;
+  overflow: auto;
+  
+}
+.wordApplogo {
+  float: left;
+  width: 190px;
+  margin-top: 2px;
+}
+.wordAppsubscribe{
+  float: right;
+  margin: 10px 20px 0 0;
+}
+.scroll-wrapper {
+	-webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
+
+	/* important:  dimensions or positioning here! */
+}
+.spanHelp{
+ float: right;
+ font-weight: normal;
+}
+label {
+  /* vertical-align: middle; */
+  border-right: 0px solid #e5e5e5;
+  /* width: 72%; */
+  display: inline-block;
+  /* zoom: 1; */
+  margin: 0;
+  padding: 9px 51px 34px 7px;
+
+}
+#submit {
+  text-align: center!important;
+  vertical-align: baseline;
+  margin: 12px;
+  width: 300px;
+  height: 54px;
+  font-size: 21px;
+}
+#submitPub {
+  text-align: center!important;
+  vertical-align: baseline;
+  margin: 12px;
+  width: 300px;
+  height: 54px;
+  font-size: 21px;
+}
+p.submit {
+  text-align: center!important;
+  }
