@@ -11,6 +11,7 @@
 */
 define('APPNAME', 'WordApp-master');
 define('PLUGIN_URL', 'http://mobile-rockstar.com/app/main/app.php');
+define('MAINURL', 'admin.php?page=WordApp');
 
 require_once dirname( __FILE__ ) . '/third/class-tgm-plugin-activation.php';
 
