@@ -361,12 +361,9 @@ else if($active_tab == "step4"){
 <h1><?php echo __('This is where it gets complicated!');?></h1>
 <h2><?php echo __('but that is why we are here, right?');?></h2>
 <h2><?php echo __('Watch this short video to see how it works.');?></h2>
-
-<object width="100%" height="400">
-              <param name="movie" value="<?php echo $activate->pubVideo; ?>&amp;showinfo=0">
-              <param name="wmode" value="transparent">
-              <embed src="<?php echo $activate->pubVideo; ?>&amp;showinfo=0" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="400">
-</object>							
+<div style="width:100%;height:100%;height: 400px; float: none; clear: both; margin: 2px auto;">
+  <embed src="<?php echo $activate->pubVideo; ?>?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="400px" allowfullscreen="true" title="Adobe Flash Player">
+</div>							
 <h2><?php echo __('We will send your your app to apple & android for free!');?></h2>
 
 <h2 style="color:red"><?php echo __('You have');?> <?php echo $activate->upload; ?>  <?php echo __('app publish credit (for free!)');?></h2>

@@ -18,11 +18,10 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar_misc.php
 
 						<div class="inside">
 							
-<object width="100%" height="400">
-              <param name="movie" value="<?php echo $activate->pubVideo; ?>&amp;showinfo=0">
-              <param name="wmode" value="transparent">
-              <embed src="<?php echo $activate->pubVideo; ?>&amp;showinfo=0" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="400">
-</object>
+
+<div style="width:100%;height:100%;height: 400px; float: none; clear: both; margin: 2px auto;">
+  <embed src="<?php echo $activate->pubVideo; ?>?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="400px" allowfullscreen="true" title="Adobe Flash Player">
+</div>
 						<center>	<p><?php echo __('Welcome to ').APPNAME.__(', Convert your wordpress site/blog in to a mobile app & mobile site within minutes'); ?></p>
 							
 						<table style="width:100%;  text-align: center;">
