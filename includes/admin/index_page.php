@@ -17,8 +17,12 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar_misc.php
 						<h3><span><?php echo __( 'Welcome to ').APPNAME; ?></span></h3>
 
 						<div class="inside">
-							<iframe src="<?php echo $activate->homeVideo; ?>" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="400"></iframe>
-						
+							
+<object width="100%" height="400">
+              <param name="movie" value="<?php echo $activate->pubVideo; ?>&amp;showinfo=0">
+              <param name="wmode" value="transparent">
+              <embed src="<?php echo $activate->pubVideo; ?>&amp;showinfo=0" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="400">
+</object>
 						<center>	<p><?php echo __('Welcome to ').APPNAME.__(', Convert your wordpress site/blog in to a mobile app & mobile site within minutes'); ?></p>
 							
 						<table style="width:100%;  text-align: center;">

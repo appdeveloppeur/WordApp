@@ -361,8 +361,12 @@ else if($active_tab == "step4"){
 <h1><?php echo __('This is where it gets complicated!');?></h1>
 <h2><?php echo __('but that is why we are here, right?');?></h2>
 <h2><?php echo __('Watch this short video to see how it works.');?></h2>
-<iframe src="<?php echo $activate->pubVideo; ?>" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="400"></iframe>
-							
+
+<object width="100%" height="400">
+              <param name="movie" value="<?php echo $activate->pubVideo; ?>&amp;showinfo=0">
+              <param name="wmode" value="transparent">
+              <embed src="<?php echo $activate->pubVideo; ?>&amp;showinfo=0" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="400">
+</object>							
 <h2><?php echo __('We will send your your app to apple & android for free!');?></h2>
 
 <h2 style="color:red"><?php echo __('You have');?> <?php echo $activate->upload; ?>  <?php echo __('app publish credit (for free!)');?></h2>
