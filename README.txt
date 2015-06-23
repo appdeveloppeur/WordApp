@@ -4,7 +4,7 @@ Donate link:
 Tags: wordapp, iphone, app, ipod, theme, apple, mac, wordpress, mobile, android, smartphone 
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 
+Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
