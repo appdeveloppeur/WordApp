@@ -42,7 +42,7 @@ static private $class = null;
 		add_action( 'admin_menu',  array($this, 'register_WordApp_menu') );
 		add_action( 'admin_init',  array($this, 'WordAppSettingValues') );
 		add_action('init', array($this, 'produce_my_json'));
-	  	add_action( 'tgmpa_register', array($this, 'include_wp_rest_api'));
+	  	add_action( 'tgmpa_register', array($this, 'include_wordApp_rest_api'));
 		
 		 /*- WP REST API -*/
 		//$this->include_wp_rest_api();
@@ -254,7 +254,8 @@ return $newinput;
 	    return $_post;
 	}
 
-	 function include_wp_rest_api() {
+	
+	 function include_wordApp_rest_api() {
 		
 		 
 		  $plugins = array(
@@ -264,7 +265,6 @@ return $newinput;
 		array(
             'name'               => 'WP API Menus', // The plugin name.
             'slug'               => 'wp-api-menus', // The plugin slug (typically the folder name).
-            'source'             => plugin_dir_path( __FILE__ ) . '/third/wp-api-menus.zip', // The plugin source.
             'required'           => true, // If false, the plugin is only 'recommended' instead of required.
             'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
             'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -272,9 +272,8 @@ return $newinput;
             'external_url'       => '', // If set, overrides default API URL and points to an external URL.
         ),
 		array(
-            'name'               => 'WP API', // The plugin name.
+            'name'               => 'WP REST API', // The plugin name.
             'slug'               => 'json-rest-api', // The plugin slug (typically the folder name).
-            'source'             => plugin_dir_path( __FILE__ ) . '/third/json-rest-api.zip', // The plugin source.
             'required'           => true, // If false, the plugin is only 'recommended' instead of required.
             'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
             'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -325,6 +324,7 @@ return $newinput;
 		 
 		 
 	}
+
 
 /* -- /Adding WP REST API --- */
 
