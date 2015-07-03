@@ -22,20 +22,20 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
   <form method="post" action="options.php">
     <?php  
     		$varColor = (array)get_option( 'WordApp_options' );
- 			settings_fields( 'WordApp_main' );
+ 			
        		$varMenu = (array)get_option( 'WordApp_menu' );
- 			settings_fields( 'WordApp_main_menu' );
+ 			
         	$varStructure = (array)get_option( 'WordApp_structure' );
- 			settings_fields( 'WordApp_main_structure' );
+ 			
         	$varSlideshow = (array)get_option( 'WordApp_slideshow' );
- 			settings_fields( 'WordApp_main_slideshow' );
+ 			
 
 
 	  ?>
   	
   	<?php
   	if( $active_tab == ""){
-  	
+  	settings_fields( 'WordApp_main' );
   	?>
 	  <h3>Colors   <span style="float:right" class="spanHelp"><img src="<?php echo plugins_url(APPNAME.'/images/help.png')?>" style="vertical-align: middle;" width="24px"  height="24px"> Top & bottom bar colors</span>	</h3>
 				
@@ -98,6 +98,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
         <?php
         }
         else if( $active_tab == "step2"){
+        settings_fields( 'WordApp_main_menu' );
        ?>
 					 <h3>Side Menu 	</h3>
 	<hr>
@@ -159,7 +160,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
         </div>
         <?php
         }else if($active_tab == "step3"){
-        
+        settings_fields( 'WordApp_main_structure' );
        
         ?>
 			
@@ -246,7 +247,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
         
 		}
 else if($active_tab == "slideshow"){
-        
+        settings_fields( 'WordApp_main_slideshow' );
        
         ?>
 			 <p>
