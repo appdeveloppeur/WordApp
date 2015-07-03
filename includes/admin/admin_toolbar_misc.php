@@ -19,7 +19,7 @@ if ( !current_user_can( 'manage_options' ) )  {
 	<td class="attributeinput"><input type="hidden" name="htmlemail" value="1" />
             <input type="text" name="attribute1"  class="attributeinput" size="20" placeholder="<?php echo __('Your Name'); ?>" value="" /></td>
 	   <td>
-		   <input type="hidden" name="list[9]" value="signup" /><input type="hidden" name="listname[9]" value="List WordApp"/><div style="display:none"><input type="text" name="VerificationCodeX" value="" size="20"></div><input type=submit name="subscribe" value="<? echo __('Subscribe!');?>" 
+		   <input type="hidden" name="list[9]" value="signup" /><input type="hidden" name="listname[9]" value="List WordApp"/><div style="display:none"><input type="text" name="VerificationCodeX" value="" size="20"></div><input type=submit name="subscribe" value="<?php echo __('Subscribe!');?>" 
 	  </td>
 	   </tr>
 </table>

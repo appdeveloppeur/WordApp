@@ -33,7 +33,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
 
 	  ?>
   	
-  	<?
+  	<?php
   	if( $active_tab == ""){
   	
   	?>
@@ -53,7 +53,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
   <input type="text" id="WordAppColor_logo" name="WordApp_options[logo]" value="<?php echo esc_url(  $varColor['logo'] ); ?>" />
         <input id="upload_logo_button" type="button" class="button" value="<?php echo __( 'Upload Logo' ); ?>" />
         <br />
-        <?
+        <?php
         if($varColor['logo'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -69,7 +69,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
           <p>
         <label for="WordApp_options[style]"><?php echo __('App Style' ); ?></label>
        <div style="left: 100px;top: -70px;position: relative;">
-			<input type="radio" name="WordApp_options[style]" id="listStyle" value="list" <?php echo ($varColor['style'] == 'list' ? 'checked' : '')?>><? echo __('List of posts'); ?><br>
+			<input type="radio" name="WordApp_options[style]" id="listStyle" value="list" <?php echo ($varColor['style'] == 'list' ? 'checked' : '')?>><?php echo __('List of posts'); ?><br>
 			<input type="radio" name="WordApp_options[style]" id="pageStyle" value="page" <?php echo ($varColor['style'] == 'page' ? 'checked' : '')?>><?php echo __('A page'); ?>
        
         <p id="pageInfo" style="<?php echo ($varColor['style'] !== 'page' ? 'display:none' : '')?>">
@@ -95,7 +95,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
         </p>
        	</div> </p>
         
-        <?
+        <?php
         }
         else if( $active_tab == "step2"){
        ?>
@@ -104,7 +104,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
        <p>
 		   <label for="WordApp_menu[side]"><?php echo __('Side Menus' ); ?></label>
         
-         <input type="radio" name="WordApp_menu[side]" id="sideBarOff" value="" <?php echo ($varMenu['side'] == '' ? 'checked' : '')?>><? echo __('off'); ?> 
+         <input type="radio" name="WordApp_menu[side]" id="sideBarOff" value="" <?php echo ($varMenu['side'] == '' ? 'checked' : '')?>><?php echo __('off'); ?> 
 		<input type="radio" name="WordApp_menu[side]" id="sideBarOn" value="on" <?php echo ($varMenu['side'] == 'on' ? 'checked' : '')?>><?php echo __('on'); ?>
        
         </p><p id="sideInfo" style="left: 156px;top: -21px;position: relative;<?php echo ($varMenu['side'] !== 'on' ? 'display:none' : '')?>">
@@ -117,7 +117,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
          <p>
 			  <label for="WordApp_menu[top]"><?php echo __('Top Menus' ); ?></label>
       
-        <input type="radio" name="WordApp_menu[top]" id="topBarOff" value="" <?php echo ($varMenu['top'] == '' ? 'checked' : '')?>><? echo __('off'); ?> 
+        <input type="radio" name="WordApp_menu[top]" id="topBarOff" value="" <?php echo ($varMenu['top'] == '' ? 'checked' : '')?>><?php echo __('off'); ?> 
 		<input type="radio" name="WordApp_menu[top]" id="topBarOn" value="on" <?php echo ($varMenu['top'] == 'on' ? 'checked' : '')?>><?php echo __('on'); ?>
          </p><p id="topInfo" style="left: 156px;top: -21px;position: relative;<?php echo ($varMenu['top'] !== 'on' ? 'display:none' : '')?>">
        <?php 
@@ -129,7 +129,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
          <p>
 			  <label for="WordApp_menu[bottom]"><?php echo __('Bottom Menus' ); ?></label>
       
-        <input type="radio" name="WordApp_menu[bottom]" id="bottomBarOff" value="" <?php echo ($varMenu['bottom'] == '' ? 'checked' : '')?>><? echo __('off'); ?> 
+        <input type="radio" name="WordApp_menu[bottom]" id="bottomBarOff" value="" <?php echo ($varMenu['bottom'] == '' ? 'checked' : '')?>><?php echo __('off'); ?> 
 		<input type="radio" name="WordApp_menu[bottom]" id="bottomBarOn" value="on" <?php echo ($varMenu['bottom'] == 'on' ? 'checked' : '')?>><?php echo __('on'); ?>
          </p><div id="bottomInfo" style="left: 156px;top: -21px;position: relative;<?php echo ($varMenu['bottom'] !== 'on' ? 'display:none' : '')?>">
        <?php 
@@ -151,13 +151,13 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
 		<select name="WordApp_menu[bottomIcon][<?php echo $i; ?>]">
 		<?php echo listOfIcons($varMenu['bottomIcon'][$i]); ?>
 		</select><br></li>
-		<?
+		<?php
     }
 					?></ul>
 		
 		<input style="position: relative;float: right;top: -100px;right: 210px;" id="jqIcons" type="button" class="button" value="<?php echo __( 'Preview Icons' ); ?>" />
         </div>
-        <?
+        <?php
         }else if($active_tab == "step3"){
         
        
@@ -171,7 +171,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
  		 <input type="text" id="WordAppColor_icon" name="WordApp_structure[icon]" value="<?php echo esc_url(  $varStructure['icon'] ); ?>" />
         <input id="upload_logo_button_icon" type="button" class="button" value="<?php echo __( 'Upload Icon' ); ?>" />
         <br />
-        <?
+        <?php
         if($varStructure['icon'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -188,7 +188,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
   		<input type="text" id="WordAppColor_splash" name="WordApp_structure[splash]" value="<?php echo esc_url(  $varStructure['splash'] ); ?>" />
         <input id="upload_logo_button_splash" type="button" class="button" value="<?php echo __( 'Upload Splash' ); ?>" />
         <br />
-        <?
+        <?php
         if($varStructure['splash'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -242,7 +242,7 @@ include trailingslashit( plugin_dir_path( __FILE__ ) ) . 'admin_toolbar.php';
 				<option value="WEATHER">Weather</option>
 			</select>
 			</p>
-        <?
+        <?php
         
 		}
 else if($active_tab == "slideshow"){
@@ -252,7 +252,7 @@ else if($active_tab == "slideshow"){
 			 <p>
 			  <label for="WordApp_menu[top]"><?php echo __('Activate the slideshow ?' ); ?></label>
       
-			 <input type="radio" name="WordApp_slideshow[onoff]" id="bottomSlideOff" value="" <?php echo ($varSlideshow['onoff'] == '' ? 'checked' : '')?>><? echo __('off'); ?> 
+			 <input type="radio" name="WordApp_slideshow[onoff]" id="bottomSlideOff" value="" <?php echo ($varSlideshow['onoff'] == '' ? 'checked' : '')?>><?php echo __('off'); ?> 
 		<input type="radio" name="WordApp_slideshow[onoff]" id="bottomSlideOn" value="on" <?php echo ($varSlideshow['onoff'] == 'on' ? 'checked' : '')?>><?php echo __('on'); ?>			
 </p>
 			<h3>Slide #1  <span style="float:right" class="spanHelp"> 
@@ -263,7 +263,7 @@ else if($active_tab == "slideshow"){
  		 <input type="text" id="WordApp_slideshow_1" name="WordApp_slideshow[one]" value="<?php echo esc_url(  $varSlideshow['one'] ); ?>" />
         <input id="upload_slideshow_one" type="button" class="button" value="<?php echo __( 'Upload Image' ); ?>" />
         <br />
-        <?
+        <?php
         if( $varSlideshow['one'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -283,7 +283,7 @@ else if($active_tab == "slideshow"){
  		<input type="text" id="WordApp_slideshow_2" name="WordApp_slideshow[two]" value="<?php echo esc_url(  $varSlideshow['two'] ); ?>" />
         <input id="upload_slideshow_two" type="button" class="button" value="<?php echo __( 'Upload Image' ); ?>" />
         <br />
-        <?
+        <?php
         if( $varSlideshow['two'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -302,7 +302,7 @@ else if($active_tab == "slideshow"){
  		<input type="text" id="WordApp_slideshow_3" name="WordApp_slideshow[three]" value="<?php echo esc_url(  $varSlideshow['three'] ); ?>" />
         <input id="upload_slideshow_three" type="button" class="button" value="<?php echo __( 'Upload Image' ); ?>" />
         <br />
-        <?
+        <?php
         if( $varSlideshow['three'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -320,7 +320,7 @@ else if($active_tab == "slideshow"){
  		<input type="text" id="WordApp_slideshow_4" name="WordApp_slideshow[four]" value="<?php echo esc_url(  $varSlideshow['four'] ); ?>" />
         <input id="upload_slideshow_four" type="button" class="button" value="<?php echo __( 'Upload Image' ); ?>" />
         <br />
-        <?
+        <?php
         if( $varSlideshow['four'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -338,7 +338,7 @@ else if($active_tab == "slideshow"){
  		<input type="text" id="WordApp_slideshow_5" name="WordApp_slideshow[five]" value="<?php echo esc_url(  $varSlideshow['five'] ); ?>" />
         <input id="upload_slideshow_five" type="button" class="button" value="<?php echo __( 'Upload Image' ); ?>" />
         <br />
-        <?
+        <?php
         if( $varSlideshow['five'] == ""){
         $img_url = plugins_url(APPNAME)."/images/no-image-icon.jpg";
         }
@@ -352,7 +352,7 @@ else if($active_tab == "slideshow"){
 
 
 
-        <?
+        <?php
         
 		}
 else if($active_tab == "step4"){
